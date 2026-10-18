@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlöRow - Privacy Policy</title>
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; max-width: 700px; margin: 40px auto; padding: 0 20px; color: #333; line-height: 1.6; }
+        h1 { font-size: 1.8em; }
+        h2 { font-size: 1.3em; margin-top: 2em; }
+        .date { color: #666; }
+    </style>
+</head>
+<body>
+    <h1>FlöRow Privacy Policy</h1>
+    <p class="date">Last updated: 18 October 2026</p>
+
+    <h2>Overview</h2>
+    <p>FlöRow is a free iPhone app for the Concept2 PM5 rowing monitor. There are no purchases in the app. It turns a workout you type or say into a PM5 program, records your row, and keeps your history. This page explains what stays on your phone and what goes elsewhere, and when.</p>
+    <p>FlöRow is made by Eric Bowman, an individual developer, who is responsible for this app and its privacy policy. You can reach him at <a href="mailto:florow-support@boboco.ie">florow-support@boboco.ie</a>.</p>
+
+    <h2>FlöRow Collects Nothing</h2>
+    <p>FlöRow itself does <strong>not</strong> collect your data. There is no FlöRow account and no FlöRow server that keeps your data. The app has no analytics, advertising, crash-reporting or tracking tools.</p>
+    <p>Data leaves your phone only when you ask for it, or after you connect a service yourself. Each case is described below.</p>
+    <p>Apple's own App Analytics and crash reports reach the developer only if you turned on <strong>Share with App Developers</strong> in your iPhone's settings. Apple handles that data under <a href="https://www.apple.com/legal/privacy/">Apple's privacy policy</a>.</p>
+
+    <h2>What Stays on Your Phone</h2>
+    <ul>
+        <li><strong>Recorded rows</strong> &mdash; for each stroke: time, distance, pace, stroke rate, power and <strong>heart rate</strong>; plus splits, the PM5 summary, start and end time and your phone's time zone. They stay until you delete them.</li>
+        <li><strong>History</strong> &mdash; your last 50 workouts, including the text you typed or dictated, and your training plans.</li>
+        <li><strong>Your PM5s</strong> &mdash; the Bluetooth identifier, name and serial number of each PM5 you add, and any nickname you give it.</li>
+        <li><strong>Settings</strong> &mdash; your preferences, your FTP (power, in watts) and its history, and your Concept2 weight class.</li>
+        <li><strong>Keys and sign-ins</strong> &mdash; your AI provider key and your Strava and Concept2 Logbook sign-ins, in the iPhone Keychain, on this device only.</li>
+    </ul>
+    <p>FlöRow talks to your PM5 directly over Bluetooth. That connection does not use the internet, and your PM5's serial number is never sent anywhere.</p>
+
+    <h2>Backups</h2>
+    <p>Your recordings, history, plans, PM5s and settings are included in your normal iCloud or computer backup, if you have backups turned on. Your keys and sign-ins are not moved to a new iPhone.</p>
+
+    <h2>What Goes Where, and Only When You Ask</h2>
+
+    <p><strong>Strava.</strong> Only if you connect it. FlöRow uploads a row only when you choose: by default it asks after each row, or you can upload by hand or turn on automatic upload. An upload contains a workout file (start time, distance, speed, stroke rate, power, <strong>heart rate</strong> and laps), a title and description, and a reference number made from the recording so a row is not uploaded twice. FlöRow does not keep your name or any other Strava profile data. It keeps the Strava activity number for 48 hours after an upload, so you can open the activity from the app; after that the number is dropped and the row is simply marked as uploaded. Strava data is never sent to an AI provider. Strava handles your data under <a href="https://www.strava.com/legal/privacy">Strava's privacy policy</a>.</p>
+    <p>Strava asks apps that use its API to tell you this: Strava may monitor and collect Usage Data and may use Usage Data for any business purpose, internal or external, including providing enhancements to the Strava API Materials or the Strava Platform, providing developer or user support, ensuring compliance with this Agreement, or otherwise. (&ldquo;This Agreement&rdquo; is Strava's API agreement with the developer of FlöRow.)</p>
+
+    <p><strong>Concept2 Logbook.</strong> Only if you connect it. Once connected, FlöRow <strong>uploads each saved row of 100 m or more automatically</strong>; you can turn this off with <strong>Upload rows automatically</strong>. A failed upload is tried again the next time you open the app, even with automatic upload off; to stop all uploads, disconnect. An upload contains the date and time zone, distance, time, workout type, weight class, stroke rate, stroke count, drag factor, calories, intervals, rest and splits, <strong>heart rate</strong>, per-stroke data, the description, and FlöRow's version, whether you use an iPhone or iPad, and your iOS version. Rows are visible to <strong>Only me</strong> unless you change it. Concept2 handles your data under <a href="https://www.concept2.com/privacy">Concept2's privacy policy</a>.</p>
+
+    <p><strong>The FlöRow sign-in helper.</strong> Signing in to Strava or the Logbook, and keeping you signed in, goes through a small FlöRow helper. It adds FlöRow's app credentials to the request and passes the answer back to your phone. It sees your IP address and the sign-in code or token, never your workouts. It has logging turned off and <strong>keeps no record</strong> (its rate limit only counts requests per IP address for a minute). (If you use your own Strava API app, FlöRow talks to Strava directly instead.) The sign-in pages are Strava's and Concept2's own, and they share your Safari session.</p>
+
+    <p><strong>Your AI provider (Anthropic or OpenAI).</strong> FlöRow reads most workouts with its own parser, on your phone. Only when it can't, and only if you added your own API key, does it ask the AI provider you chose. Before the first AI request to each provider, FlöRow asks your permission and shows what is sent. If you say no, nothing is sent. You can turn AI off again at any time with the switch in <strong>Settings &rsaquo; AI</strong>.</p>
+    <ul>
+        <li><strong>What is sent:</strong> the workout text you typed or dictated, your answers to any follow-up questions, and your FTP with the training zones worked out from it.</li>
+        <li><strong>What is never sent:</strong> heart rate, your recorded rows, and any Strava data.</li>
+        <li>Requests go straight from your phone to the provider, under your own account and key. Requests to OpenAI ask it not to store the response. See <a href="https://www.anthropic.com/legal/privacy">Anthropic's privacy policy</a> and <a href="https://openai.com/policies/privacy-policy/">OpenAI's privacy policy</a>.</li>
+    </ul>
+
+    <p><strong>Apple Health.</strong> Off by default. If you turn on <strong>Save workouts to Apple Health</strong>, each saved row is written to Health as a rowing workout with distance, active energy and heart rate. FlöRow never reads from Apple Health.</p>
+
+    <p><strong>Apple speech recognition.</strong> If you dictate a workout, FlöRow uses Apple's speech recognition. Your iPhone does this on the device when it can; otherwise iOS sends the audio to Apple. FlöRow does not keep the audio.</p>
+
+    <p><strong>Photos and sharing.</strong> FlöRow adds an image to Photos, or shares a file or image, only when you tap Save or Share. These can show your heart rate. Where they go is up to you.</p>
+
+    <h2>Deleting Your Data</h2>
+    <p>In FlöRow you can delete rows, forget a PM5, delete your AI key, and disconnect Strava or the Logbook. Deleting the app removes its data from your phone, and your saved sign-ins and AI key are cleared if you install it again.</p>
+    <p>Data you already sent elsewhere stays there until you remove it in that service:</p>
+    <ul>
+        <li><strong>Strava</strong> &mdash; delete activities on Strava. Disconnecting in FlöRow deletes the sign-in from your phone and asks Strava to end its access; you can also remove FlöRow under <strong>My Apps</strong> in your Strava settings.</li>
+        <li><strong>Concept2 Logbook</strong> &mdash; delete results in your Logbook. Disconnecting removes the sign-in from your phone; to end FlöRow's access, also remove it under <strong>Edit Profile &rsaquo; Applications</strong> in your Logbook account.</li>
+        <li><strong>Apple Health</strong> &mdash; in the Health app, open your profile, then <strong>Apps</strong>, choose FlöRow and delete its data, or turn off its access.</li>
+        <li><strong>AI provider</strong> &mdash; requests are kept under your own account, as that provider's policy says. Delete or revoke your API key in your Anthropic or OpenAI account.</li>
+    </ul>
+    <p>Backups of your iPhone made earlier, in iCloud or on a computer, still contain your recordings until those backups are deleted.</p>
+
+    <h2>Your Rights</h2>
+    <p>You can ask to see, correct, delete or get a copy of your data. FlöRow keeps nothing on a server, so you can do most of this on your phone (export a workout file, delete rows, or delete the app). For data you sent to another service, contact that service. If you are unhappy, you can complain to the <a href="https://www.dataprotection.ie">Data Protection Commission (Ireland)</a> or the data protection authority where you live.</p>
+
+    <h2>Children</h2>
+    <p>FlöRow does not collect any information from anyone, including children.</p>
+
+    <h2>Changes to This Policy</h2>
+    <p>If this policy changes, the new version will be posted at this address with a new &ldquo;Last updated&rdquo; date.</p>
+
+    <h2>Contact</h2>
+    <p>Questions about privacy: email <a href="mailto:florow-support@boboco.ie">florow-support@boboco.ie</a> or open an issue at <a href="https://github.com/ebowman/privacy/issues">github.com/ebowman/privacy/issues</a>. Issues are public, so please don't post personal details there; use email for anything private.</p>
+</body>
+</html>

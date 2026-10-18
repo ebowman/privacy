@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlöRow - Support</title>
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; max-width: 700px; margin: 40px auto; padding: 0 20px; color: #333; line-height: 1.6; }
+        h1 { font-size: 1.8em; }
+        h2 { font-size: 1.3em; margin-top: 2em; }
+        h3 { font-size: 1.1em; margin-top: 1.5em; }
+        a { color: #007aff; }
+    </style>
+</head>
+<body>
+    <h1>FlöRow Support</h1>
+
+    <h2>About FlöRow</h2>
+    <p>FlöRow is an iPhone app for the Concept2 PM5 rowing monitor. Type or say a workout, send it to your PM5, row it, and keep your history. You can also upload your rows to Strava and the Concept2 Logbook.</p>
+
+    <h2>Getting Started</h2>
+    <ol>
+        <li>Turn on your PM5 and make sure Bluetooth is on for your iPhone.</li>
+        <li>In FlöRow, open <strong>Settings</strong> and tap <strong>Add PM5</strong> under <strong>Devices</strong>. Pick your PM5 from the list.</li>
+        <li>Type or dictate a workout, check it, and send it to the PM5.</li>
+        <li>Row. FlöRow records the row and saves it to your history.</li>
+    </ol>
+
+    <h2>Frequently Asked Questions</h2>
+
+    <h3>FlöRow can't find my PM5</h3>
+    <p>Wake the PM5 by pressing a button, keep your iPhone close to it, and tap <strong>Scan Again</strong>. Check that FlöRow is allowed to use Bluetooth in your iPhone's Settings. You can rename a remembered PM5, or <strong>Forget</strong> it and add it again by scanning.</p>
+
+    <h3>How do I connect Strava?</h3>
+    <p>Open <strong>Settings</strong> &rarr; <strong>Strava</strong> and tap <strong>Connect with Strava</strong>, then sign in on Strava's page. By default FlöRow asks after each row whether to upload it; you can also upload by hand or turn on automatic upload. Advanced users can choose <strong>Use your own Strava app</strong> and enter their own client ID and secret. Tap <strong>Disconnect</strong> to stop.</p>
+
+    <h3>How do I connect the Concept2 Logbook?</h3>
+    <p>Open <strong>Settings</strong> &rarr; <strong>Concept2 Logbook</strong> and tap <strong>Connect to Concept2 Logbook</strong>, then sign in on Concept2's page. Once connected, rows of 100 m or more are uploaded automatically after you save them, as visible to <strong>Only me</strong>. You can turn off <strong>Upload rows automatically</strong>, set your weight class, and choose <strong>Who can see uploaded rows</strong>. A failed upload is retried the next time you open the app; to stop all uploads, tap <strong>Disconnect</strong>. Disconnecting deletes the sign-in from your phone, and your rows keep their Logbook upload status. Concept2 gives apps no way to cancel their own access, so to revoke it fully, also remove FlöRow in your Concept2 Logbook account under <strong>Edit Profile</strong> &rarr; <strong>Applications</strong>.</p>
+
+    <h3>Do I need an AI key?</h3>
+    <p>No. FlöRow is free and reads most workouts with its own built-in parser, on your phone. If you want help with workouts it can't read, add your own Anthropic or OpenAI API key in <strong>Settings</strong> and tap <strong>Test Key</strong>. Your key stays in the Keychain on this device, and you can tap <strong>Delete Key</strong> at any time. AI requests are billed to your own account with the provider.</p>
+
+    <h3>Why does FlöRow ask before using AI?</h3>
+    <p>Before the first AI request to each provider, FlöRow shows what it will send (your workout text, your answers to follow-up questions, and your FTP with its zones) and asks your permission. Choose <strong>Not now</strong> and nothing is sent; FlöRow uses its built-in parser only. You can turn AI on or off at any time with the switch in <strong>Settings &rsaquo; AI</strong>. If you switch provider, FlöRow asks again.</p>
+
+    <h3>How do I share a workout image?</h3>
+    <p>Open a saved row and tap Share. You can save the image to Photos or send it with any app you choose. The image can show your heart rate, so check it before you share.</p>
+
+    <h3>Is my data shared or uploaded?</h3>
+    <p>Only when you choose. FlöRow has no accounts, no analytics and no ads. See our <a href="florow-privacy.html">Privacy Policy</a> for exactly what goes where.</p>
+
+    <h3>How do I delete my data?</h3>
+    <p>Delete rows in FlöRow, or delete the app. Deleting FlöRow removes its data from your phone, and saved sign-ins and your AI key are cleared if you install it again. Data already sent to Strava, the Concept2 Logbook, Apple Health or your AI provider stays there; delete it in that service. Earlier iCloud or computer backups still contain your recordings until those backups are deleted. The <a href="florow-privacy.html">Privacy Policy</a> explains how to remove data or access in each service.</p>
+
+    <h2>Contact &amp; Feedback</h2>
+    <p>For questions, bug reports, or feature requests:</p>
+    <ul>
+        <li>Email: <a href="mailto:florow-support@boboco.ie">florow-support@boboco.ie</a></li>
+        <li>GitHub: <a href="https://github.com/ebowman/privacy/issues">github.com/ebowman/privacy/issues</a></li>
+    </ul>
+
+    <h2>Privacy Policy</h2>
+    <p>Read our <a href="florow-privacy.html">Privacy Policy</a>.</p>
+</body>
+</html>
